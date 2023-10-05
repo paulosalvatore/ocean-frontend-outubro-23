@@ -2,7 +2,7 @@ import './App.css'
 import Card from './components/Card/Card'
 
 /*
-- Layout:
+- Layout: Cards estão um embaixo do outro
 - Conteúdo está repetido/não está dinâmico
 */
 
@@ -17,10 +17,13 @@ function App() {
     imagemUrl: 'https://rickandmortyapi.com/api/character/avatar/2.jpeg'
   }
 
+  const personagens = [personagem1, personagem2]
+
   return (
     <>
-      <Card item={personagem1} />
-      <Card item={personagem2} />
+      {personagens.map(function (personagem) {
+        return <Card item={personagem} />
+      })}
     </>
   )
 }
