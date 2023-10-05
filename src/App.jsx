@@ -17,7 +17,12 @@ function App() {
     imagemUrl: 'https://rickandmortyapi.com/api/character/avatar/2.jpeg'
   }
 
-  const personagens = [personagem1, personagem2]
+  const personagem3 = {
+    nome: 'Summer Smith',
+    imagemUrl: 'https://rickandmortyapi.com/api/character/avatar/3.jpeg'
+  }
+
+  const personagens = [personagem1, personagem2, personagem3]
 
   return (
     <>
