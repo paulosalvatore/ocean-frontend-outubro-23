@@ -9,7 +9,8 @@ import Card from './components/Card/Card'
 function App() {
   const personagem1 = {
     nome: 'Rick Sanchez',
-    imagemUrl: 'https://rickandmortyapi.com/api/character/avatar/1.jpeg'
+    imagemUrl: 'https://rickandmortyapi.com/api/character/avatar/1.jpeg',
+    tags: ['Status: Vivo', 'Espécie: Humana', 'Origem: Terra C-137']
   }
 
   const personagem2 = {
